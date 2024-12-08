@@ -685,7 +685,15 @@ img {
     .wrapper2 .img1 {
         width: 500px;
     }
-
+    .hero
+    {
+        background-image: url(theyyam.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: contain;
+        background-attachment: fixed;
+    }
 
 }
 
@@ -847,38 +855,7 @@ img {
     .wrapper2 .img1 {
         width: 350px;
     }
-    /* @keyframes rotate
-    {
-        0%
-        {
-            transform: rotate(0deg);
-        }
-        100%
-        {
-            transform: rotate(360deg);
-        }
-    }
-    .gradient
-    {
-        --size:400px;
-        --speed:7s;
-        --easing:cubic-bazier(0.8,0.2,0.2,0.8);
-        filter: blur(calc(var(--size)/5));
-        background-image: linear-gradient(to right,rgb(255, 0, 153), #022cff, #00ffcc);
-        animation: rotate var(--speed) linear infinite;
-        width: var(--size);
-        height: var(--size);
-        border-radius: 500%;
-        position:fixed;
-        transform: translate(-100%,-100%);
-        margin-top: 50%;
-        margin-left: 0px;
-        filter: drop-shadow(rgba(191, 236, 13, 0.85), #8600fa,orange,aqua);
-    }
-    *
-    {
-        transition: all .10s ease-out;
-    } */
+   
     body
     {
       
@@ -896,7 +873,7 @@ img {
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        background-color: rgba(0, 0, 0, 0.295);
+        background-color: rgba(0, 0, 0, 0.13);
         background-blend-mode: overlay;
     }
 }
