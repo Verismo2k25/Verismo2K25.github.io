@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.container
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+body
+{
+    background-image: url(KEYSORTER2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html, body, .background {
+    height: 100%;
+}
+.image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image img
+{
+    width: 30rem;
+    margin-top: 5rem;
+    margin-right: 30px;
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
+}
+.image h5
+{
+    color: white;
+    font-size: 2rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+}
+.image h4
+{
+    color: rgb(248, 236, 10);
+    font-size: 2rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+}
+.image button
+{
+    font-size: 1.5rem;
+    margin: 20px auto;
+    border: 5px solid rgb(246, 255, 0);
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    box-shadow: 1px 1px 20px rgb(240, 120, 0);
+}
+.image button:hover
+{
+    color: rgb(14, 14, 14);
+    transform: scale(1.1);
+    border: 5px solid rgb(123, 255, 0);
+    box-shadow: 1px 1px 20px rgb(0, 250, 142);
+    background: rgb(3, 206, 105);
+}
+.scrollbox .scrollbox-inner 
+{
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-height:600px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.219);
+}
+.scrollbox-inner h5
+{
+    
+    font-size: 1.6rem;
+    text-decoration: overline;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+    color: white;
+    margin-left: 10px;
+}
+.scrollbox .scrollbox-inner ul li
+{
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    text-shadow: 2px 2px 10px black;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+    word-spacing: normal;
+}
+.div
+{
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.322);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    position: relative;
+    margin-top: 5%;
+}
+.contact
+{
+    color: rgb(14, 255, 203);
+    font-size: 1.5rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-align: end;
+    margin-right: 10px;
+    text-shadow: 2px 2px 10px black;
+}
+.div .contact .c
+{
+   
+    margin-right: 50px;
+}
+.div h4
+{
+    
+    color: rgb(235, 219, 219);
+    font-size: 1.5rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px black;
+}
+.image .back {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem; /* Increase the size of the icon */
+    left: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top:30px;
+    margin-right: 80%;
+    background-color: rgba(0, 0, 0, 0.603);
+    border: none;
+    border-radius: 80px;
+    padding: 2px;
+    
+}
+.scrollbox .scrollbox-inner .and 
+{
+    color: rgb(0, 255, 170);
+}
+.div img
+{
+    width: 30px;
+    margin-left: 15px;
+    margin-bottom: 3px;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.43) );
+    background-color: transparent;
+}
+  
+.image .back:hover {
+    color: #05f772;
+    transform: translateY(-10px);
+}
+::-webkit-scrollbar
+{
+    width: 0.7em;
+}
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.466);
+    border-radius: 20px;
+    margin-block: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(rgb(129, 1, 248),rgb(255, 51, 0));
+    border-radius: 20px;
+}
+@-webkit-keyframes spin
+{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin
+{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin
+{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+.rings .RING2
+{
+    width: 200px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 40px;
+    -webkit-animation: spin1 5s linear infinite;
+    -moz-animation: spin1 5s linear infinite;
+    animation: spin1 5s linear infinite;
+    filter: drop-shadow(5px 5px 10px rgba(170, 1, 255, 0.616));
+}
+@-webkit-keyframes spin1
+{
+    100%{-webkit-transform: rotate(-360deg);}
+}
+@-moz-keyframes spin1
+{
+    100%{-webkit-transform: rotate(-360deg);}
+}
+@keyframes spin1
+{
+    100%{-webkit-transform: rotate(-360deg);}
+}
+
+
+
+
+
+
+
+
+/* media queries */
+@media all and (min-width:400px)
+{
+    .image img
+    {
+        width: 30rem;
+    }
+    .image .back
+    {
+        margin-right: 90%;
+    }
+    .scrollbox
+    {
+        display: flex;
+    }
+    .scrollbox .scrollbox-inner ul li
+    {
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 10px black;
+        word-spacing: normal;
+    }
+    .scrollbox .scrollbox-inner h5
+    {
+        font-size: 1.5rem;
+        word-spacing: 4px;
+        text-align: center;
+        text-shadow: 2px 2px 10px black;
+    }
+    .div h4
+    {
+        text-transform: uppercase;
+    }
+    .contact
+    {
+        text-transform: uppercase;
+    }
+}
+
+@media all and (min-width:300px)
+{
+    .image img
+    {
+        width: 18rem;
+        margin-left: 25px;
+    }
+    .image h5
+    {
+        font-size: 30px;
+    }
+    .image h4
+    {
+        font-size: 25px;
+    }
+    .image button
+    {
+        font-size: 20px;
+    }
+    .image .back
+    {
+        margin-right: 80%;
+    }
+    .scrollbox
+    {
+        display: flex;
+    }
+    .scrollbox .scrollbox-inner ul li
+    {
+        font-size: 17px;
+        color: white;
+        text-shadow: 2px 2px 10px black;
+        word-spacing: normal;
+    }
+    .scrollbox .scrollbox-inner h5
+    {
+        font-size: 1.6rem;
+        word-spacing: 4px;
+        text-align: center;
+        text-shadow: 2px 2px 10px black;
+    }
+    .scrollbox .scrollbox-inner 
+    {
+        max-height: 500px;
+    }
+    .scrollbox .scrollbox-inner ul .sp1
+    {
+        word-spacing: 1px;
+    }
+    .scrollbox .scrollbox-inner ul .sp2
+    {
+        word-spacing: normal;
+    }
+    .div h4
+    {
+        text-transform: uppercase;
+    }
+    .contact
+    {
+        text-transform: uppercase;
+    }
+}
+
+
+
+@media all and (min-width:750px)
+{
+    .image img
+    {
+        width: 25rem;
+    }
+    .image .back
+    {
+        margin-right: 90%;
+    }
+    .scrollbox
+    {
+        display: flex;
+        margin:auto;
+        width: 90%;
+    }
+    .scrollbox .scrollbox-inner ul li
+    {
+        font-size: 20px;
+        color: white;
+    }
+    .scrollbox .scrollbox-inner h5
+    {
+        font-size: 2rem;
+        word-spacing: 4px;
+        text-align: center;
+
+    }
+    .div h4
+    {
+        text-transform: uppercase;
+    }
+    .contact
+    {
+        text-transform: uppercase;
+    }
+}
+
+@media all and (min-width:1024px)
+{
+    .rings
+    {
+        display: flex;
+        margin-left: 50%;
+        margin-top: -150px;
+    }
+    .rings .RING1
+    {
+        width: 500px;
+    }
+    .rings .RING2
+    {
+        width: 400px;
+        margin-right: -30px;
+        margin-top: 60px;
+    }
+    .container
+    {
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        column-gap: 20px;
+        flex-direction: row;
+        max-width: 100%;
+        max-height: 100vh;
+    }
+    body
+    {
+        background-image: url(keyboard1.jpg);
+        max-height: 50vh;
+    }
+    .div
+    {
+        margin-top: 150px;
+        
+        box-shadow: 2px 2px 20px 2px rgb(7, 7, 7);
+        border:none;
+        background-color: rgba(255, 77, 1, 0.361);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+        border-radius: 20px;
+
+    }
+    .contact
+    {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .div h4
+    {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    .image
+    {
+        margin-left: 50px;
+    }
+    .image img
+    {
+        width: 25rem;
+        margin-left: 0px;
+
+    }    
+    .scrollbox
+    {
+        margin-top: 50px;
+        max-width: 800px;
+        margin-right: 10px;
+    }
+    .image .back
+    {
+        margin-left: -80px;
+    }
+    .image button
+    {
+        font-size: 25px;
+    }
+}
+
+
+
+@media all and (min-width:1400px)
+{
+    .container
+    {
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        column-gap: 20px;
+        flex-direction: row;
+        max-width: 100%;
+        max-height: 100vh;
+    }
+    body
+    {
+        background-image: url(Esport.jpg);
+    }
+    .div
+    {
+        margin-top: 100px;
+        box-shadow: 2px 2px 20px 2px rgb(7, 7, 7);
+        border:none;
+        background-color: rgba(255, 77, 1, 0.361);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 400px;
+        border-radius: 20px;
+        position: fixed;
+    }
+    .image
+    {
+        margin-left: 100px;
+    }
+    .image img
+    {
+        width: 35rem;
+        margin-left: 10px;
+    }    
+    .scrollbox
+    {
+        margin-top: 50px;
+        max-width: 800px;
+        margin-right: 10px;
+    }
+    .image .back
+    {
+        margin-left: -150px;
+    }
+    .image button
+    {
+        font-size: 25px;
+    }
+     .contact
+    {
+        font-size: 30px;
+    }
+    .div h4
+    {
+        font-size: 30px;
+    }
+}

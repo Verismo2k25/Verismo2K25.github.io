@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event REGISTRATION</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="eventreg.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Danfo&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    <div class="container">
+        <div class="gradient"></div>
+        
+        <div class="hero">
+
+            <nav class="menubar">
+                <a href="index.html" style="cursor: pointer;" target="_self" alt="home"><img
+                        src="nav logo.png" alt="logo" class="logo"></a>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a style="cursor: pointer; background: transparent;"
+                            class="showonmobile"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="eventreg.html">EVENT REGISTRATION</a></li>
+                    <li><a href="album.html">PHOTO GALLERY</a></li>
+                    <li><a href="#">FOOD REGISTRATION</a></li>
+                    <li><a href="banshee.html">CONTACT</a></li>
+
+                </ul>
+                <ul class="sidebar1">
+                    <li class="hideonmobile"><a href="home.html">HOME<span></span></a></li>
+                    <li class="hideonmobile"><a href="eventreg.html">EVENT REGISTRATION<span></span></a></li>
+                    <li class="hideonmobile"><a href="album.html">PHOTO GALLERY<span></span></a></li>
+                    <li class="hideonmobile"><a href="#">FOOD REGISTRATION<span></span></a></li>
+                    <li class="hideonmobile"><a href="banshee.html">CONTACT<span></span></a></li>
+                    <li onclick=showSidebar()><a style="cursor: pointer; background: transparent;border: none;"
+                            class="showonmobile"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+                                viewBox="0 -960 960 960" width="40px" fill="#e8eaed">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+            <!-- <div class="parallax">
+            <img src="parallax1.png" class="mount1">
+         </div> -->
+         <div class="popup" id="popup">
+            <img src="hi emoji.png" alt="hi emoji">
+            <h3>HELLO!</h3>
+            <h4>please read me</h4>
+            <p>Participants Who want food to be arranged have to register separately for the food from <span>Food Registration</span> menu.</p>
+            <button type="button" class="close">OK</button>
+        </div>
+        </div>
+        <div class="cards">
+
+            <div class="card1 ">
+                <div class="image">
+                    <img src="tech.png" alt="robot">
+                    <button class="btn" type="button">CLICK ME</button>
+                </div>
+                <div class="content">
+                    <h2>TECH TITANS</h2>
+                    <p>Technical Project competition</p></div>
+              </div>
+            <div class="card2">
+                <div class="image">
+                    <img src="solveathon.jpg" alt="coding">
+                    <button class="btn" type="button">CLICK ME</button>
+                </div>
+                <div class="content">
+                    <h2>SOLVE-A-THON</h2>
+                    <p>Coding Competition</p>
+
+                </div>
+            </div>
+
+                <div class="card3">
+                    <div class="image">
+                        <img src="lens beins bg.png" alt="photography">
+                        <button class="btn" type="button">CLICK ME</button>
+                    </div>
+                    <div class="content">
+                        <h2>LENS-BEINS</h2>
+                        <p>Photography Competition</p>
+
+                    </div>
+                </div>
+            
+
+            <div class="card4">
+                <div class="image">
+                    <img src="quiz bg.jpg" alt="puzzle">
+                    <button class="btn" type="button">CLICK ME</button>
+                </div>
+                <div class="content2">
+                    <h2>WHIZ-HOLICS</h2>
+                    <p>Quiz Competition</p>
+                    <p>Word hunt Competition</p>
+                    <p>Puzzle Solving Competition</p>
+
+                </div>
+            </div>
+
+
+            <div class="card5">
+                <div class="image">
+                    <img src="dance6.jpeg" alt="dance">
+                    <a href="dolitle.html" style="cursor: pointer;" target="_blank"><button class="btn" type="button">CLICK
+                            ME</button></a>
+                </div>
+                <div class="content3">
+                    <h2>BEAT-BOUNCE-BONANZA</h2>
+                    <p>Spot Choreography Competition</p>
+
+                </div>
+            </div>
+
+                <div class="card6">
+                    <div class="image">
+                        <img src="treasure pc bg.jpg" alt="treasure hunt">
+                        <a href="treasure.html" style="cursor: pointer;" target="_blank"><button class="btn" type="button">CLICK
+                                ME</button></a>
+                    </div>
+                    <div class="content">
+                        <h2>ELEMENTAL QUEST</h2>
+                        <p>Treasure Hunt</p>
+
+                    </div>
+                </div>
+    
+
+            <div class="card7">
+                <div class="image">
+                    <img src="Happy male and female politicians greeting each other on stage.jpg" alt="treasure hunt">
+                    <a href="narcos.html" style="cursor: pointer;" target="_blank"><button type="button" class="btn">CLICK
+                            ME</button></a>
+                </div>
+                <div class="button"></div>
+                <div class="content">
+                    <h2>LISTEN UP</h2>
+                    <p>Debate Competition</p>
+
+                </div>
+            </div>
+
+
+            <div class="card8">
+                <div class="image">
+                    <img src="keysorter.jpg" alt="keyboard">
+                    <a href="keysorter.html" target="_blank"><button class="btn" type="button">CLICK ME</button></a>
+                </div>
+                <div class="content">
+                    <h2>KEY SORTER</h2>
+                    <p>Memory Game</p>
+                </div>
+            </div>
+
+
+            <div class="card9">
+                <div class="image">
+                    <img src="geekz bg.png" alt="gaming">
+                    <a href="geekz.html" target="_blank" style="cursor: pointer;"><button class="btn" type="button">CLICK
+                            ME</button></a>
+                </div>
+                <div class="content">
+                    <h2>GEEKZ VANGUARD</h2>
+                    <p>Gaming Competition</p>
+
+                </div>
+            </div>
+
+
+            <div class="card10">
+                <div class="image">
+                    <img src="verimso night pc bg.jpg" alt="gaming">
+                    <a href="verismonight.html" style="cursor: pointer;" target="_blank"><button class="btn" type="button">CLICK
+                            ME</button></a>
+                </div>
+                <div class="content4">
+                    <h2>VERISMO NIGHT</h2>
+                    <p>DJ Night</p>
+                    <p>Adich Keri Vaa!!</p>
+                </div>
+            </div>
+        </div>
+        <!-- back to top button -->
+        <a href="#" class="back-to-top">
+            <span class="material-icons">arrow_upward </span>
+        </a>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script type="text/javascript">
+
+        var menubar = document.querySelector('.menubar');
+        window.addEventListener('scroll', scrollFunction);
+
+        function scrollFunction() {
+            if ($(window).width() >500) 
+            {
+            if (window.scrollY > 150) {
+                menubar.classList.add('active');
+            }
+            else {
+                menubar.classList.remove('active');
+            }
+        }
+        }
+    </script>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+    </script>
+    <script>
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <script>
+        const backtotop = document.querySelector(".back-to-top");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+                backtotop.classList.add("active");
+            }
+            else {
+                backtotop.classList.remove("active")
+            }
+        }
+        )
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).width() < 500) {
+                $(".card1").css("opacity", 1 - $(window).scrollTop() / 320)
+                $(".card2").css("opacity", 2 - $(window).scrollTop() / 350)
+                $(".card3").css("opacity", 3 - $(window).scrollTop() / 350)
+                $(".card4").css("opacity", 4 - $(window).scrollTop() / 350)
+                $(".card5").css("opacity", 5 - $(window).scrollTop() / 350)
+                $(".card6").css("opacity", 6 - $(window).scrollTop() / 350)
+                $(".card7").css("opacity", 7 - $(window).scrollTop() / 350)
+                $(".card8").css("opacity", 8 - $(window).scrollTop() / 350)
+                $(".card9").css("opacity", 9 - $(window).scrollTop() / 340)
+                $(".card10").css("opacity", 10 - $(window).scrollTop() / 350)
+            }
+        });
+    </script>
+
+<!-- automatic pop up after 1sec of page -->
+    <script>
+        const popup=document.querySelector('.popup');
+        const close=document.querySelector('.close')
+        window.onload=function(){
+            setTimeout(function()
+        {
+            popup.style.display="block";
+           
+        },100)
+        }
+        
+        close.addEventListener('click',() =>{
+            popup.style.display="none";
+        })
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,1033 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    font-weight: 800;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body
+{
+    color: white;
+    background-image: url(black-wallpaper-pc-heroscreen.cc-4k.png);
+}
+.cards
+{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center; 
+}
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+{
+    width: 450px;
+    height: 400%;
+    aspect-ratio: 1/0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    border: 5px solid rgb(0, 252, 197);
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+.card1 .image,.card2 .image,.card3 .image,.card4 .image,.card5 .image,.card6 .image,.card7 .image,.card8 .image,.card9 .image,.card10 .image
+{
+    width: 100%;
+    height: 100%;
+   
+}
+.card1 .image img,.card2 .image img,.card3 .image img,.card4 .image img,.card5 .image img,.card6 .image img,.card7 .image img,.card8 .image img,.card9 .image img,.card10 .image img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  transition: 0.5s ease-in-out;
+  display: block;
+  border-radius: 5px;
+}
+
+.card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after
+{
+  content: "";
+  position: absolute;
+  inset: 0px;
+  border: 5px solid rgb(222, 223, 222);
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+.card1:hover img,.card2:hover img,.card3:hover img,.card4:hover img,.card5:hover img,.card6:hover img,.card7:hover img,.card8:hover img,.card9:hover img,.card10:hover img
+{
+    filter: grayscale(0.3) brightness(0.4);
+}
+.card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after,.card7:hover::after,.card8:hover::after,.card9:hover::after,.card10:hover::after
+{
+    opacity: 1;
+    inset: 10px;
+    padding: 10px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+    filter: blur(30px);
+    z-index: -1;
+}
+.content
+{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content h2
+{
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    margin-top: 30%;
+    transition: 0.5s ease;
+    text-shadow: 2px 2px black;
+    font-family: "Nunito", sans-serif;
+}
+.content p
+{
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+    text-shadow: 2px 2px black;
+    font-family: "Nunito", sans-serif;
+}
+.content p
+{
+    font-size: 23px;
+    line-height: 1.5;
+    color: white;
+    transform: translateY(50%);
+    font-family: "Nunito", sans-serif;
+}
+.card1:hover .content h2,.card2:hover .content h2,.card3:hover .content h2,.card4:hover .content h2,.card5:hover .content h2,.card6:hover .content h2,.card7:hover .content h2,.card8:hover .content h2,.card9:hover .content h2,.card10:hover .content h2
+{
+    scale: 1;
+    opacity: 1;
+    margin-top: 5%;
+}
+.card1:hover .content p,.card2:hover .content p,.card3:hover .content p,.card4:hover .content p,.card5:hover .content p,.card6:hover .content p,.card7:hover .content p,.card8:hover .content p,.card9:hover .content p,.card10:hover .content p
+{
+    opacity: 1;
+    transform: translateY(0);
+    line-height: 1.5;
+}
+.image
+{
+    display: inline-block;
+    position: relative;
+}
+.image .btn
+{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.491);
+    border: 3px solid rgb(0, 245, 240);
+    color: rgb(254, 252, 252);
+    z-index: 9999;
+    transition: 0.5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 77%;
+    left: 37%;
+    text-transform: uppercase;
+    font-family: "Acme", sans-serif;
+}
+.card1:hover .image button,.card2:hover .image button,.card3:hover .image button,.card4:hover .image button,.card5:hover .image button,.card6:hover .image button,.card7:hover .image button,.card8:hover .image button,.card9:hover .image button,.card10:hover .image button
+{
+    opacity: 1;
+    
+}
+.image .btn:hover
+{
+  transform: scale(1.1);
+  background-color: rgba(2, 231, 101, 0.671);
+  color: rgb(0, 0, 0);
+  border-color:rgb(6, 226, 13) ;
+  box-shadow: 1px 1px 20px rgb(0, 250, 137);
+}
+.image button
+{
+    margin-bottom: 150px;
+}
+.content2
+{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content2 h2
+{
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    margin-top: 30%;
+    transition: 0.5s ease;
+    text-shadow: 2px 2px black;
+    font-family: "Nunito", sans-serif;
+}
+.content2 p
+{
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+    text-shadow: 2px 2px black;
+    font-family: "Nunito", sans-serif;
+}
+.content2 p
+{
+    font-size: 23px;
+    line-height: 1.5;
+    color: white;
+    transform: translateY(50%);
+}
+.card4:hover .content2 h2 
+{
+    scale: 1;
+    opacity: 1;
+    margin-top: -25px;
+}
+.card4:hover .content2 p
+{
+    opacity: 1;
+    transform: translateY(0);
+    line-height: 1.5;
+}
+.content3
+{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content3 h2
+{
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    margin-top: 30%;
+    transition: 0.5s ease;
+    text-shadow: 2px 2px black;
+    font-family: "Nunito", sans-serif;
+}
+.content3 p
+{
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+    text-shadow: 2px 2px black;
+    font-family: "Nunito", sans-serif;
+}
+.content3 p
+{
+    font-size: 23px;
+    line-height: 1.5;
+    color: white;
+    transform: translateY(50%);
+}
+.card5:hover .content3 h2 
+{
+    scale: 1;
+    opacity: 1;
+    margin-top: 0px;
+}
+.card5:hover .content3 p
+{
+    opacity: 1;
+    transform: translateY(0);
+    line-height: 1.5;
+}
+
+.content4
+{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content4 h2
+{
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    margin-top: 20%;
+    transition: 0.5s ease;
+    text-shadow: 2px 2px black;
+    font-family: "Nunito", sans-serif;
+}
+.content4 p
+{
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+    text-shadow: 2px 2px black;
+    font-family: "Nunito", sans-serif;
+}
+.content4 p
+{
+    font-size: 23px;
+    line-height: 1.5;
+    color: white;
+    transform: translateY(50%);
+}
+.card10:hover .content4 h2 
+{
+    scale: 1;
+    opacity: 1;
+    margin-top: 0px;
+}
+.card10:hover .content4 p
+{
+    opacity: 1;
+    transform: translateY(0);
+    line-height: 1.5;
+}
+.hero {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    transition: background 0.5s, padding 0.5s;
+}
+.menubar.active {
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 16px 100px;
+    border-bottom: 2px solid transparent;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.menubar.active .logo {
+    box-shadow: 2px 2px 10px 3px rgba(255, 102, 0, 0.911);
+}
+
+.menubar.active .logo:hover {
+    box-shadow: 2px 2px 10px 3px rgba(0, 255, 115, 0.911);
+}
+nav .logo {
+    width: 150px;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: 2px 2px 30px 3px rgba(0, 255, 221, 0.911);
+}
+nav .logo:hover {
+    box-shadow: 2px 2px 10px 3px rgba(0, 255, 115, 0.911);
+}
+nav .sidebar1 li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    font-family: "Nunito", sans-serif;
+}
+nav .sidebar1 li a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.435);
+    font-size: 18px;
+    font-weight: 700;
+    transition: .5s;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-top: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+nav .sidebar1 a:hover {
+    color: rgb(0, 255, 166);
+    border: none;
+    background-color: rgba(0, 0, 0, 0.416);
+}
+nav .sidebar1 a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 5px solid rgb(0, 255, 255);
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+    padding: 15px 0px 20px;
+}
+nav .sidebar1 a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(1, 255, 213, 0.389);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    border-left: 2px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar li {
+    color: rgb(253, 251, 251);
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    margin-top: 10%;
+    list-style: none;
+}
+.sidebar a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(253, 251, 251);
+    font-size: 25px;
+}
+.sidebar li {
+    width: 100%;
+    text-decoration: none;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 2px solid rgb(251, 251, 251);
+    color: rgb(255, 249, 249);
+    transition: 0.2s ease-out;
+    opacity: 0;
+    pointer-events: none;
+    transition: all;
+    z-index: 999;
+}
+.back-to-top span {
+    font-size: 2.2rem;
+    transition: 0.2s ease-out;
+
+}
+.back-to-top:hover {
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 2px 2px 30px 3px rgba(0, 0, 0, 0.911);
+}
+.back-to-top:hover span {
+    transform: translateY(-2px);
+}
+.back-to-top.active {
+    pointer-events: auto;
+    opacity: 1;
+}
+.popup
+{
+    width: 340px;
+    background: white;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    position:fixed;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0px 30px 60px;
+    color: black;
+    padding-bottom: 30px;
+    z-index: 1000;
+    display: none;
+    box-shadow: 5px 5px 50px 5px rgb(0, 0, 0);
+}
+.popup img
+{
+    width: 100px;
+    margin-top: -50px;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.567));
+}
+.popup  h3
+{
+    font-size: 38px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.popup h4
+{
+    font-size: 25px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    margin-top: 2px;
+}
+.popup p
+{
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    margin-top: 2px;
+}
+.popup button
+{
+    width: 40%;
+    margin-top: 30px;
+    font-size: 22px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    background-color: #faa200;
+    color: rgb(246, 246, 246);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.532);
+    transition: 0.5 all ease;
+}
+.popup button:hover
+{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media all and (max-width:2600px)
+{
+    body
+    {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    }
+
+    nav
+    {
+        padding-left:  10px;
+        padding-right: 10px;
+    }
+    nav .logo {
+        width: 150px;
+        height: 70px;
+        margin-left: 30px;
+    } 
+    nav .sidebar1 li a {
+        font-size: 20px;
+    }
+    .menubar.active
+    {
+        padding: 10px;
+    }
+    nav .sidebar1 li a {
+        font-size: 20px;
+    }
+    nav .sidebar1 .showonmobile {
+        display: none;
+        pointer-events: none;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    {
+        width: 500px;
+    }
+    .image .btn
+    {
+        margin-left: 3%;
+    }
+    .content h2
+    {
+        font-size: 40px;
+    }
+    .content2 h2
+    {
+        font-size: 40px;
+    }
+    .content3 h2
+    {
+        font-size: 40px;
+    }
+    .content4 h2
+    {
+        font-size: 40px;
+    }
+    .content p
+    {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .content2 p
+    {
+        font-size: 30px;
+    }
+    .content3 p
+    {
+        font-size: 25px;
+    }
+    .content4 p
+    {
+        font-size: 30px;
+    }
+    .image .btn
+    {
+       font-size: 25px;
+       margin-left:5px ;
+       margin-bottom: 10px;
+    }
+    .popup
+    {
+        width: 540px;
+    }
+}
+@media all and (max-width:1440px)
+{
+    nav .logo {
+        width: 140px;
+        height: 70px;
+    }
+    nav .sidebar1 li a {
+        font-size: 20px;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    {
+        width: 500px;
+    }
+    .image .btn
+    {
+        margin-left: 3%;
+    }
+    .content h2
+    {
+        font-size: 30px;
+    }
+    .content2 h2
+    {
+        font-size: 30px;
+    }
+    .content3 h2
+    {
+        font-size: 30px;
+    }
+    .content4 h2
+    {
+        font-size: 30px;
+    }
+    .content p
+    {
+        font-size: 22px;
+    }
+    .content2 p
+    {
+        font-size: 22px;
+    }
+    .content3 p
+    {
+        font-size: 22px;
+    }
+    .content4 p
+    {
+        font-size: 22px;
+    }
+    .image .btn
+    {
+        font-size: 20px;
+    }
+    .card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after,.card7:hover::after,.card8:hover::after,.card9:hover::after,.card10:hover::after
+    {
+        padding: 31%;
+        margin-top: -1%;
+    }
+}
+@media all and (max-width:1024px)
+{
+    nav {
+        justify-content: space-between;
+    }
+    nav .logo {
+        width: 120px;
+        height: 60px;
+    }
+    nav .sidebar1 .hideonmobile {
+        display: none;
+    }
+    nav .sidebar1 .showonmobile {
+        display: flex;
+    }
+    nav .sidebar1 li a {
+        font-size: 20px;
+    }
+    .sidebar {
+        width: 50%;
+        height: 100%;
+    }
+    .sidebar li a:hover {
+        text-decoration: line-through;
+        padding-bottom: 2px;
+    }
+}
+@media all and (max-width:900px)
+{
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    {
+        width: calc(100% / 2);
+    }
+
+    .image .btn
+    {
+        margin-left: -1%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .content h2
+    {
+        font-size: 28px;
+    
+    }
+    .content2 h2
+    {
+        font-size: 30px;
+        
+    }
+    .content3 h2
+    {
+        font-size: 30px;
+    }
+    .content4 h2
+    {
+        font-size: 30px;
+    }
+    .content p
+    {
+        font-size: 20px;
+    }
+    .content2 p
+    {
+        font-size: 20px;
+    }
+    .content3 p
+    {
+        font-size: 19px;
+    }
+    .content4 p
+    {
+        font-size: 20px;
+    }
+    .image .btn
+    {
+        font-size: 18px;
+    }
+    .card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after
+    {
+        display: flex;
+        border: 1px solid greenyellow;
+    }
+    .card1 .image img, .card2 .image img, .card3 .image img, .card4 .image img, .card5 .image img, .card6 .image img, .card7 .image img, .card8 .image img, .card9 .image img, .card10 .image img
+    {
+        height: 102.7%;
+        border-radius: 5px;
+    }
+    .popup
+    {
+        width: 340px;
+    }
+    .card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after,.card7:hover::after,.card8:hover::after,.card9:hover::after,.card10:hover::after
+    {
+        display: none;
+    }
+
+
+
+}
+@media all and (max-width:431px)
+{
+    body
+    {
+        background-color: rgba(0, 0, 0, 0.898);
+        background-image: none;
+    }
+    @keyframes rotate
+    {
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: rotate(360deg);
+        }
+    }
+    .gradient
+    {
+        --size:400px;
+        --speed:7s;
+        --easing:cubic-bazier(0.8,0.2,0.2,0.8);
+        filter: blur(calc(var(--size)/5));
+        background-image: linear-gradient(to right,rgb(255, 0, 153), #022cff, #00ffcc);
+        animation: rotate var(--speed) linear infinite;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 500%;
+        position:fixed;
+        transform: translate(-100%,-100%);
+        margin-top: 50%;
+        margin-left: 0px;
+        filter: drop-shadow(rgba(191, 236, 13, 0.85), #8600fa,orange,aqua);
+    }
+    *
+    {
+        transition: all .10s ease-out;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    {
+        transition: opacity 0.5s;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    nav .logo {
+        width: 120px;
+        height: 60px;
+        border: none;
+        margin-left: 6px;
+    }
+    nav .sidebar1 .showonmobile {
+        display: flex;
+    }
+    .sidebar {
+        width: 100%;
+        height: 100%;
+    }
+    .menubar.active {
+        background-color: transparent;
+        border-bottom: 2px solid transparent;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top: none;
+        border-top-left-radius: none;
+        border-top-right-radius: none;
+        border: none;
+    }
+    .menubar.active .logo
+    {
+        margin-left: 6px;
+    }
+    .sidebar li {
+        font-size: 25px;
+    }
+    .sidebar li a {
+        color: white;
+        text-shadow: 2px 2px black;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    {
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image .btn
+    {
+        margin-left: -1%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .content h2
+    {
+        font-size: 28px;
+        text-shadow: none;
+    
+    }
+    .content2 h2
+    {
+        font-size: 30px;
+        text-shadow: none;
+    }
+    .content3 h2
+    {
+        font-size: 30px;
+        text-shadow: none;
+    }
+    .content4 h2
+    {
+        font-size: 30px;
+        text-shadow: none;
+    }
+    .content p
+    {
+        font-size: 18px;
+        text-shadow: none;
+    }
+    .content2 p
+    {
+        font-size: 20px;
+    }
+    .content3 p
+    {
+        font-size: 17px;
+        text-shadow: none;
+    }
+    .content4 p
+    {
+        font-size: 20px;
+        text-shadow: none;
+    }
+    .image .btn
+    {
+        font-size: 15px;
+    }
+    .card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after
+    {
+        display: flex;
+        border: 1px solid greenyellow;
+    }
+    .card1 .image img, .card2 .image img, .card3 .image img, .card4 .image img, .card5 .image img, .card6 .image img, .card7 .image img, .card8 .image img, .card9 .image img, .card10 .image img
+    {
+        height: 100%;
+        border-radius: 5px;
+    }
+    .parallax 
+    {
+        display: flex;
+        z-index: 999;
+    }
+   
+}
+@media all and (max-width:425px)
+{
+    nav {
+        justify-content: space-between;
+    }
+    nav .logo {
+        width: 100px;
+        height: 50px;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    {
+        width: 320px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image .btn
+    {
+        margin-left: -1%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .content h2
+    {
+        font-size: 28px;
+    
+    }
+    .content2 h2
+    {
+        font-size: 25px;
+        
+    }
+    .content3 h2
+    {
+        font-size: 25px;
+    }
+    .content4 h2
+    {
+        font-size: 28px;
+    }
+    .content p
+    {
+        font-size: 18px;
+    }
+    .content2 p
+    {
+        font-size: 18px;
+    }
+    .content3 p
+    {
+        font-size: 18px;
+    }
+    .content4 p
+    {
+        font-size: 18px;
+    }
+    .image .btn
+    {
+        font-size: 15px;
+    }
+    .card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after
+    {
+    border: 1px solid greenyellow;
+    }
+    .card1 .image img, .card2 .image img, .card3 .image img, .card4 .image img, .card5 .image img, .card6 .image img, .card7 .image img, .card8 .image img, .card9 .image img, .card10 .image img
+    {
+        height: 100%;
+        border-radius: 5px;
+    }
+    .card1, .card2, .card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    {
+        aspect-ratio: 0.7/0.7;
+    }
+    .popup
+    {
+        width: 300px;
+        max-height: 400px;
+        margin-top: 10%;
+        margin-left: 4px;
+    }
+} 

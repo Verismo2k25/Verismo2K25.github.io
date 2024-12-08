@@ -1,0 +1,504 @@
+body {
+  width: 100%;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(maze.jpeg);
+  background-attachment: fixed; /* This makes the background image fixed during scroll */
+  background-size: cover; /* This makes the background cover the entire area */
+  background-attachment: fixed; /* This makes the background image fixed during scroll */
+  background-repeat: no-repeat; /* This prevents the background image from repeating */
+  background-position: center; /* This centers the background image */
+}
+
+.custom-col-1 {
+  width: 175%;
+}
+
+.card {
+  text-align: left;
+
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.9
+  ); /* Adjust the opacity (4th value) as needed */
+  border: none;
+  border-radius: 15px;
+  background: rgba(253, 253, 253, 0.1);
+
+  overflow: hidden;
+  color: rgb(252, 252, 252);
+}
+
+.card:hover {
+  box-shadow: 0 8px 116px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Adjust the shadow on hover as needed */
+}
+.card-body {
+  margin-top: 3%;
+}
+.card-text {
+  margin-top: 3%; /* Add left margin to card content */
+  font-size: 1px;
+}
+
+.cont1,
+.cont2,
+.cont3,
+.cont4 {
+  position: absolute;
+  margin: 10%;
+  margin-left: 3%;
+  margin-top: 2%;
+  width: 300px;
+}
+
+.image {
+  width: 40%; /* Full width of the card body */
+  height: 700px; /* Adjust height as needed */
+  background: url("pngegg\ \(1\).png") no-repeat center center;
+  background-size: cover; /* Cover the entire div */
+  border-radius: 15px; /* Optional: same border-radius as the card */
+  background-position: center;
+  border-radius: 15px; /* Optional: same border-radius as the card */
+  margin: 0 29%; /* Center the image div */
+  
+}
+.image1 {
+  width: 70%; /* Full width of the card body */
+  height: 250px; /* Adjust height as needed */
+  background: url(maze2.png) no-repeat center center;
+  background-size: cover; /* Cover the entire div */
+  border-radius: 15px; /* Optional: same border-radius as the card */
+  background-position: center;
+  border-radius: 15px; /* Optional: same border-radius as the card */
+  margin: 0 auto;
+}
+
+.image2,  .image1mobile, .image2mobile {
+  filter: drop-shadow(7px 7px 7px #666666);
+  -webkit-filter: drop-shadow(7px 7px 7px #666666);
+}
+.image1,.image1mobile,.image3,.image3mob{
+  filter: drop-shadow(1px 1px 1px #00f2ff);
+  -webkit-filter: drop-shadow(1px 1px 6px #00f2ff);
+}
+
+.image2 {
+  width: 100%; /* Full width of the card body */
+  height: 250px; /* Adjust height as needed */
+  background: url(WHIz\ 2.png) no-repeat center center;
+  background-size: cover; /* Cover the entire div */
+  border-radius: 15px; /* Optional: same border-radius as the card */
+  background-position: center;
+  border-radius: 15px; /* Optional: same border-radius as the card */
+  margin: 0% 20% 0% 30%;
+  margin-top: -18%;
+  
+}
+
+
+.image3 {
+  width: 80%; /* Full width of the card body */
+  height: 250px; /* Adjust height as needed */
+  background: url(cube3.png) no-repeat center center;
+  background-size: cover; /* Cover the entire div */
+  border-radius: 15px; /* Optional: same border-radius as the card */
+  background-position: center;
+  border-radius: 15px; /* Optional: same border-radius as the card */
+  margin: 20% auto;
+  transform: translate(40%, 0%);
+}
+
+.cont1 {
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+}
+
+.card li {
+  font-size: 15px;
+  padding-top: 5%;
+  letter-spacing: 1px;
+}
+
+.cont2 {
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+}
+
+.form,
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  margin-left: 19%;
+  border-radius: 2rem;
+}
+.btn-color-1:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.btn-color-1 {
+  color: white;
+  background: rgb(18, 18, 18);
+
+  border: 1px solid rgb(255, 255, 255);
+}
+.btn-color-1:hover {
+  transform: translateY(-10px);
+  background: rgb(0, 0, 0);
+  box-shadow: 0 8px 116px rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.1); /* Adjust the shadow on hover as needed */
+}
+
+.REG {
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+
+  font-weight: bolder;
+}
+.pr {
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+.K {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.fe {
+  margin-left: 50%;
+}
+
+@media (max-width: 935px) {
+  .cont1,.cont2,.image{
+    display: none;
+  }
+}
+@media (max-width: 1264px) {
+  .lol{
+    display: none;
+   
+  }
+}
+
+@media (min-width: 515px) and (max-width:3900px){
+  .cont2mobile,.cont1mobile{
+    display: none;
+  }
+  
+}
+@media (min-width: 515px) and (max-width:765px){
+  .image2{
+transform: scale(0.7);
+  }
+  
+}
+@media (min-width: 1265px) and (max-width:3965px){
+ .btn1{
+  display: none;
+ }
+  
+}
+.fe2{
+  display: none;
+}
+
+@media (min-width: 1px) and (max-width:1200px){
+  .fe2{
+    display: block;
+  }
+  
+}
+@media (min-width: 514px) and (max-width:1000px){
+  .btn1{
+    transform: translate(-25%,0%);
+  }
+  
+}
+@media (min-width: 1000px){
+  .btn1{
+    transform: translate(90%,0%);
+  }
+  
+}
+
+@media(max-width:514px){
+  .fe2{
+    display: none;
+  }
+  .imagemobile {
+    display: block;
+    
+  }
+  
+  .btn1:hover {
+    background: rgb(82, 142, 21);
+    box-shadow: 0 8px 116px rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.1); /* Adjust the shadow on hover as needed */
+  }
+  
+ 
+  .image2mob{
+    width: 90%; /* Full width of the card body */
+    height: 280px; /* Adjust height as needed */
+    background: url(WHIz\ 2.png) no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: -25% 20% 0% 8%;
+  }
+  .btn{
+    margin: 5%;
+    margin-left: 1%;
+  }
+  .K {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left:15%;
+  }
+  
+  .image3mob {
+    width: 60%; /* Full width of the card body */
+    height: 250px; /* Adjust height as needed */
+    background: url(cube3.png) no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: 5% 10% 25% 5%;
+    transform: translate(40%, 0%);
+  }
+  .fe{
+    margin: 20% 0% 10% 37%;
+  }
+  .cont2mobile{
+    margin: 0% 0% 0% -5.5%;
+  }
+
+  .image1mobile {
+    width: 80%; /* Full width of the card body */
+    height: 270px; /* Adjust height as needed */
+    background: url("maze2.png") no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: 0 auto;
+  }
+  .card{
+    margin-top: 180%;
+    margin-bottom: 5%;
+  }
+}
+
+
+@media(max-width:376px){
+
+
+  .card{
+    margin-top: 250%;
+
+  }
+  .image1mobile {
+    width: 60%; /* Full width of the card body */
+    height: 250px; /* Adjust height as needed */
+    background: url(maze2.png) no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: 0 auto;
+  }
+  .image3mob {
+    width: 55%; /* Full width of the card body */
+    height: 250px; /* Adjust height as needed */
+    background: url(cube3.png) no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: 5% 10% 25% 5%;
+    transform: translate(40%, 0%);
+  }
+  .K{
+    margin-left: 7%;
+  }
+}
+@media(min-width:380px)and(max-width:391px){
+  .image1mobile {
+    width: 60%; /* Full width of the card body */
+    height: 250px; /* Adjust height as needed */
+    background: url(maze2.png) no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: 0 auto;
+  }
+  .image3mob {
+    width: 55%; /* Full width of the card body */
+    height: 250px; /* Adjust height as needed */
+    background: url(cube3.png) no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: 5% 10% 25% 5%;
+    transform: translate(40%, 0%);
+  }
+  
+  
+}
+
+@media (min-width: 515px) and (max-width:1265px){
+  .cont1,.cont2,.image,.card {
+    display: block;
+    transform: scale(0.8); /* Adjust the scale factor as needed */
+  }
+  .image{
+  
+      width: 0%; /* Full width of the card body */
+      height: 600px; /* Adjust height as needed */
+      background: url("pngegg\ \(1\).png") no-repeat center center;
+      background-size: cover; /* Cover the entire div */
+      border-radius: 15px; /* Optional: same border-radius as the card */
+      background-position: center;
+      border-radius: 15px; /* Optional: same border-radius as the card */
+      margin: 0 15%; /* Center the image div */
+      opacity: 0.4;
+    }
+  }
+  
+
+  .back {
+    color: rgb(188, 191, 193);
+    font-size: 2.5rem; /* Increase the size of the icon */
+    position: fixed;
+    bottom: 20px;
+    left: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .back:hover {
+    color: #e4d7d7;
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 935px) {
+    .back {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.btn1 {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 15rem;
+  color: white;
+  background: rgb(118, 126, 126);
+  border-radius: 5rem;
+  border: 1px solid rgb(255, 255, 255);
+}
+.btn1:hover {
+  background: rgb(82, 142, 21);
+  box-shadow: 0 8px 116px rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.1); /* Adjust the shadow on hover as needed */
+}
+
+
+
+
+
+
+
+@media(max-width:376px){
+  
+  .image1mobile {
+    width: 70%; /* Full width of the card body */
+    height: 250px; /* Adjust height as needed */
+    background: url(maze2.png) no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: 0 auto;
+  }
+  .image2mob{
+    width: 90%; /* Full width of the card body */
+    height: 230px; /* Adjust height as needed */
+    background: url(WHIz\ 2.png) no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: -25% 20% 0% 12%;
+  }
+  .image3mob {
+    width: 70%; /* Full width of the card body */
+    height: 250px; /* Adjust height as needed */
+    background: url(cube3.png) no-repeat center center;
+    background-size: cover; /* Cover the entire div */
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    background-position: center;
+    border-radius: 15px; /* Optional: same border-radius as the card */
+    margin: 5% 10% 25% -2%;
+    transform: translate(40%, 0%);
+  }
+}
+

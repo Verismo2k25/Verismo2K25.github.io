@@ -1,0 +1,85 @@
+/* Set body and html to full size and remove margins */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Blurred radial mesh gradient as the background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 30% 30%, rgb(255, 0, 128), transparent 70%),
+                radial-gradient(circle at 70% 50%, rgb(0, 128, 255), transparent 70%),
+                radial-gradient(circle at 50% 80%, rgba(255, 255, 0, 0.6), transparent 70%),
+                radial-gradient(circle at 90% 20%, rgb(0, 255, 128), transparent 70%),
+                radial-gradient(circle at 10% 90%, rgba(128, 0, 255, 0.991), transparent 70%),
+                radial-gradient(circle at 50% 50%, rgb(255, 0, 255), transparent 80%);
+    background-size: 150% 150%;
+    filter: blur(50px); /* Heavier blur for smooth transitions */
+    animation: gradientShift 15s ease infinite, gradientShiftAlt 30s ease infinite; /* Apply animations here */
+    z-index: -2;
+}
+
+/* Black overlay to make the content pop */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+    z-index: -1;
+}
+
+/* Content Styling */
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* Keyframe animation for horizontal gradient movement */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Keyframe animation for vertical gradient movement */
+@keyframes gradientShiftAlt {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
