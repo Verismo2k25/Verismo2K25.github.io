@@ -1021,6 +1021,8 @@ img {
         width: 250px;
         box-shadow: 5px 5px 40px 10px rgba(6, 174, 216, 0.747);
         border: none;
+        margin-left: 20px;
+        height: auto;
     }
 
     .menubar.active {
