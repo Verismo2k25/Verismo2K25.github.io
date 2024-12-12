@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.container
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+body
+{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.315)),
+    url(dj1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html, body, .background {
+    height: 100%;
+}
+.image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image img
+{
+    width: 25em;
+    margin-top: 5rem;
+    margin-right: 30px;
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
+}
+.image h5
+{
+    color: white;
+    font-size: 2rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+}
+.image h4
+{
+    color: rgb(3, 255, 133);
+    font-size: 2rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.image button
+{
+    font-size: 1.5rem;
+    margin: 20px auto;
+    border: 5px solid rgb(0, 255, 149);
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+}
+.image button:hover
+{
+    color: rgb(14, 14, 14);
+    transform: scale(1.1);
+    box-shadow: 1px 1px 20px rgb(0, 250, 137);
+    background: rgb(3, 206, 105);
+}
+.scrollbox .scrollbox-inner 
+{
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-height:600px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.219);
+}
+.scrollbox-inner h5
+{
+    
+    font-size: 1.6rem;
+    text-decoration: overline;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+    color: white;
+    margin-left: 10px;
+}
+.scrollbox .scrollbox-inner ul li
+{
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    text-shadow: 2px 2px 10px black;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+    word-spacing: normal;
+}
+.div
+{
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    position: relative;
+    margin-top: 5%;
+    backdrop-filter: blur(5px);
+}
+.contact
+{
+    color: rgb(14, 255, 203);
+    font-size: 1.4rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-align: end;
+    margin-right: 10px;
+    text-shadow: 2px 2px 10px black;
+}
+.div .contact .c
+{
+   
+    margin-right: 50px;
+}
+.div h4
+{
+    
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px black;
+}
+.image .back {
+    color: rgb(238, 240, 242);
+    font-size: 2.5rem; /* Increase the size of the icon */
+    left: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top:30px;
+    margin-right: 80%;
+    background-color: rgba(0, 211, 144, 0.476);
+    border: none;
+    border-radius: 80px;
+    padding: 2px;
+    
+}
+.scrollbox .scrollbox-inner .and 
+{
+    color: rgb(0, 255, 170);
+}
+.div img
+{
+    width: 30px;
+    margin-left: 15px;
+    margin-bottom: 3px;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.43) );
+    background-color: transparent;
+}
+  
+.image .back:hover {
+    color: #51f400;
+    transform: translateY(-10px);
+}
+::-webkit-scrollbar
+{
+    width: 0.7em;
+}
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.466);
+    border-radius: 20px;
+    margin-block: 5px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(rgb(1, 248, 149),rgb(0, 240, 236));
+    border-radius: 20px;
+}
+.cost1
+{
+    font-size: 23px;
+    word-spacing: 3px;
+}
+.element
+{
+    display: block;
+    position:absolute;
+    left: 300px;
+    top: 15%;
+    height:auto;
+    width: auto;
+}
+.element img
+{
+    filter: drop-shadow(2px 2px 10px rgb(5, 253, 241));
+    width: 70px;
+    -webkit-animation: spin1 5s linear infinite ;
+    -moz-animation:  spin1 5s linear infinite;
+    animation: spin1 5s linear infinite;
+}
+/* keryframes for rotation */
+@-webkit-keyframes spin1
+{
+    50%{-webkit-transform:rotate(180deg)}
+    100%{-webkit-transform:rotate(-180deg)}
+}
+@-moz-keyframes spin1
+{
+    50%{-webkit-transform:rotate(180deg)}
+    100%{-webkit-transform:rotate(-180deg)}
+}
+@keyframes spin1
+{
+    50%{-webkit-transform:rotate(180deg)}
+    100%{-webkit-transform:rotate(-180deg)}
+}
+
+.element1
+{
+    display: block;
+    position:absolute;
+    left: 20px;
+    margin-right: 0px;
+    top: 28%;
+    height:auto;
+    width: auto;
+}
+.element1 img
+{
+    filter: drop-shadow(2px 2px 10px rgb(0, 255, 8));
+    width: 70px;
+    -webkit-animation: spin 5s linear infinite ;
+    -moz-animation:  spin 5s linear infinite;
+    animation: spin 5s linear infinite;
+}
+/* keryframes for rotation */
+@-webkit-keyframes spin
+{
+    50%{-webkit-transform:rotate(-180deg)}
+    100%{-webkit-transform:rotate(180deg)}
+}
+@-moz-keyframes spin
+{
+    50%{-webkit-transform:rotate(-180deg)}
+    100%{-webkit-transform:rotate(180deg)}
+}
+@keyframes spin
+{
+    50%{-webkit-transform:rotate(-180deg)}
+    100%{-webkit-transform:rotate(180deg)}
+}
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media all and (min-width:400px)
+{
+    .image img
+    {
+        width: 40rem;
+    }
+    .image .back
+    {
+        margin-right: 90%;
+    }
+    .scrollbox
+    {
+        display: flex;
+    }
+    .scrollbox .scrollbox-inner ul li
+    {
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 10px black;
+        word-spacing: normal;
+    }
+    .scrollbox .scrollbox-inner h5
+    {
+        font-size: 1.5rem;
+        word-spacing: 4px;
+        text-align: center;
+        text-shadow: 2px 2px 10px black;
+    }
+    .div h4
+    {
+        text-transform: uppercase;
+    }
+    .contact
+    {
+        text-transform: uppercase;
+    }
+    body
+    {
+        background-attachment: fixed;
+
+    }
+}
+
+@media all and (min-width:300px)
+{
+    .image img
+    {
+        width: 20rem;
+        margin-left: 10px;
+    }
+    .image h5
+    {
+        font-size: 30px;
+    }
+    .image h4
+    {
+        font-size: 25px;
+    }
+    .image button
+    {
+        font-size: 20px;
+    }
+    .image .back
+    {
+        margin-right: 80%;
+    }
+    .scrollbox
+    {
+        display: flex;
+    }
+    .scrollbox .scrollbox-inner ul li
+    {
+        font-size: 17px;
+        color: white;
+        text-shadow: 2px 2px 10px black;
+        word-spacing: normal;
+    }
+    .scrollbox .scrollbox-inner h5
+    {
+        font-size: 1.6rem;
+        word-spacing: 4px;
+        text-align: center;
+        text-shadow: 2px 2px 10px black;
+    }
+    .scrollbox .scrollbox-inner 
+    {
+        max-height: 500px;
+    }
+    .scrollbox .scrollbox-inner ul .sp1
+    {
+        word-spacing: 1px;
+    }
+    .scrollbox .scrollbox-inner ul .sp2
+    {
+        word-spacing: normal;
+    }
+    .div h4
+    {
+        text-transform: uppercase;
+    }
+    .contact
+    {
+        text-transform: uppercase;
+    }
+}
+
+
+
+@media all and (min-width:750px)
+{
+    .image img
+    {
+        width: 30rem;
+    }
+    .image .back
+    {
+        margin-right: 90%;
+    }
+    .scrollbox
+    {
+        display: flex;
+        margin:auto;
+        width: 90%;
+    }
+    .scrollbox .scrollbox-inner ul li
+    {
+        font-size: 20px;
+        color: white;
+    }
+    .scrollbox .scrollbox-inner h5
+    {
+        font-size: 2rem;
+        word-spacing: 4px;
+        text-align: center;
+
+    }
+    .div h4
+    {
+        text-transform: uppercase;
+    }
+    .contact
+    {
+        text-transform: uppercase;
+    }
+}
+
+@media all and (min-width:1024px)
+{
+    .element
+    {
+        display: none;
+        pointer-events: none;
+    }
+    .container
+    {
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        column-gap: 20px;
+        flex-direction: row;
+        max-width: 100%;
+        max-height: 100vh;
+    }
+    body
+    {
+        background-image: url(verimso\ night\ pc\ bg.jpg);
+        max-height: 50vh;
+        background-size: cover;
+        background-position: center center;
+    }
+    .div
+    {
+        background-color: transparent;
+        margin-top: 100px;
+        box-shadow: none;
+        border:none;
+        backdrop-filter: none;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+
+    }
+    .contact
+    {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .div h4
+    {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    .image
+    {
+        margin-left: 50px;
+        margin-top: -30px;
+    }
+    .image img
+    {
+        width: 25rem;
+        margin-left: 0px;
+    }    
+    .scrollbox
+    {
+        margin-top: 150px;
+        max-width: 800px;
+        margin-right: 10px;
+    }
+    .image .back
+    {
+        margin-left: -80px;
+    }
+    .image button
+    {
+        font-size: 25px;
+    }
+    .image .cost 
+    {
+        font-size: 30px;
+    }
+}
+
+
+
+@media all and (min-width:1400px)
+{
+    .container
+    {
+        margin: auto 0px;
+        display: flex;
+        column-gap: 20px;
+        flex-direction: row;
+        max-width: 100%;
+        max-height: 100vh;
+        justify-content: space-between;
+    }
+    body
+    {
+        background-image: url(verimso\ night\ pc\ bg.jpg);
+        max-height: 50vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .div
+    {
+        margin-top: 100px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 400px;
+    }
+    .image
+    {
+        margin-top: 0px;
+        margin-left: 100px;
+    }
+    .image img
+    {
+        width: 35rem;
+        margin-left: 10px;
+        margin-top: -10px;
+    }    
+    .scrollbox
+    {
+        margin-top: 200px;
+        max-width: 800px;
+        margin-right: 10px;
+    }
+    .image .back
+    {
+        margin-left: -150px;
+        margin-top: 50px;
+    }
+    .image button
+    {
+        font-size: 25px;
+    }
+     .contact
+    {
+        font-size: 30px;
+    }
+    .div h4
+    {
+        font-size: 30px;
+    }
+}

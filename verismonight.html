@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verismo TechFest | VERISMO NIGHT</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="verismonight.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Danfo&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container">
+            <div class="element">
+                <img src=" dj elements.jpg" alt="">
+            </div>
+            <div class="element1">
+                <img src="dj elements.jpg" alt="">
+            </div>
+            <div class="image">
+              
+                <img src="VERIMSOnight header.png" alt="" />
+                <h5>REG FEE : 150</h5>
+                <h4 class="cost" >[ FREE <br><Span class="cost1">FOR ONLY THOSE INDIVIDUALS OR TEAMS REGISTERED ALREADY FOR ANY EVENT ]</Span></h4>
+                <button type="button">Register</button>
+            </div>
+
+            <div class="scrollbox">
+                <div class="scrollbox-inner">
+                    <h5>RULES <span class="and">AND</span>  REGULATIONS</h5>
+                    <ul>
+                        <li>
+                            Registration Closes at 2pm.
+                        </li>
+                        <li>
+                            College ID must required.
+                        </li>
+                        <li class="sp2">
+                            No Drugs.
+                        </li>
+                        <li>
+                            No violence
+                        </li>
+                        <li>
+                            Violation of above rules will be expelled from the campus
+                        </li>
+                    </ul>
+                </div>
+            </div>
+      
+            
+            </div>
+            <div class="div">
+                <h5 class="contact">contact  :</h5>
+                <h4>Yash</h4>
+                <!-- click to call -->
+                <a href="tel:1xxxxxxxxx"><img src="telephone.png" alt=""></a>
+                <!-- click to chat on whatsapp -->
+                <a href="https://wa.me/1xxxxxxxxx"><img src="whatsapp.png" alt=""></a>
+            </div>   
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).width() < 500) {
+                $(".element").css("opacity", 1 - $(window).scrollTop() / 320)
+                $(".element1").css("opacity", 1 - $(window).scrollTop() / 320)
+                $(".image").css("opacity", 1 - $(window).scrollTop() / 320)
+            }
+        });
+    </script>
+</body>
+
+</html>
