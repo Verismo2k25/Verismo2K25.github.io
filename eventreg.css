@@ -21,7 +21,7 @@ body
    align-items: center;
    justify-content: center; 
 }
-.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11
 {
     width: 450px;
     height: 400%;
@@ -36,13 +36,13 @@ body
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.336);
 }
-.card1 .image,.card2 .image,.card3 .image,.card4 .image,.card5 .image,.card6 .image,.card7 .image,.card8 .image,.card9 .image,.card10 .image
+.card1 .image,.card2 .image,.card3 .image,.card4 .image,.card5 .image,.card6 .image,.card7 .image,.card8 .image,.card9 .image,.card10 .image,.card11 .image
 {
     width: 100%;
     height: 100%;
    
 }
-.card1 .image img,.card2 .image img,.card3 .image img,.card4 .image img,.card5 .image img,.card6 .image img,.card7 .image img,.card8 .image img,.card9 .image img,.card10 .image img
+.card1 .image img,.card2 .image img,.card3 .image img,.card4 .image img,.card5 .image img,.card6 .image img,.card7 .image img,.card8 .image img,.card9 .image img,.card10 .image img,.card11 .image img
 {
   width: 100%;
   height: 100%;
@@ -53,7 +53,7 @@ body
   border-radius: 5px;
 }
 
-.card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after
+.card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after,.card11::after
 {
   content: "";
   position: absolute;
@@ -63,11 +63,11 @@ body
   opacity: 0;
   transition: 0.4s ease-in-out;
 }
-.card1:hover img,.card2:hover img,.card3:hover img,.card4:hover img,.card5:hover img,.card6:hover img,.card7:hover img,.card8:hover img,.card9:hover img,.card10:hover img
+.card1:hover img,.card2:hover img,.card3:hover img,.card4:hover img,.card5:hover img,.card6:hover img,.card7:hover img,.card8:hover img,.card9:hover img,.card10:hover img,.card11:hover img
 {
     filter: grayscale(0.3) brightness(0.4);
 }
-.card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after,.card7:hover::after,.card8:hover::after,.card9:hover::after,.card10:hover::after
+.card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after,.card7:hover::after,.card8:hover::after,.card9:hover::after,.card10:hover::after,.card11:hover::after
 {
     opacity: 1;
     inset: 10px;
@@ -116,13 +116,13 @@ body
     transform: translateY(50%);
     font-family: "Nunito", sans-serif;
 }
-.card1:hover .content h2,.card2:hover .content h2,.card3:hover .content h2,.card4:hover .content h2,.card5:hover .content h2,.card6:hover .content h2,.card7:hover .content h2,.card8:hover .content h2,.card9:hover .content h2,.card10:hover .content h2
+.card1:hover .content h2,.card2:hover .content h2,.card3:hover .content h2,.card4:hover .content h2,.card5:hover .content h2,.card6:hover .content h2,.card7:hover .content h2,.card8:hover .content h2,.card9:hover .content h2,.card10:hover .content h2,.card11:hover .content h2
 {
     scale: 1;
     opacity: 1;
     margin-top: 5%;
 }
-.card1:hover .content p,.card2:hover .content p,.card3:hover .content p,.card4:hover .content p,.card5:hover .content p,.card6:hover .content p,.card7:hover .content p,.card8:hover .content p,.card9:hover .content p,.card10:hover .content p
+.card1:hover .content p,.card2:hover .content p,.card3:hover .content p,.card4:hover .content p,.card5:hover .content p,.card6:hover .content p,.card7:hover .content p,.card8:hover .content p,.card9:hover .content p,.card10:hover .content p,.card11:hover .content p
 {
     opacity: 1;
     transform: translateY(0);
@@ -154,7 +154,7 @@ body
     text-transform: uppercase;
     font-family: "Acme", sans-serif;
 }
-.card1:hover .image button,.card2:hover .image button,.card3:hover .image button,.card4:hover .image button,.card5:hover .image button,.card6:hover .image button,.card7:hover .image button,.card8:hover .image button,.card9:hover .image button,.card10:hover .image button
+.card1:hover .image button,.card2:hover .image button,.card3:hover .image button,.card4:hover .image button,.card5:hover .image button,.card6:hover .image button,.card7:hover .image button,.card8:hover .image button,.card9:hover .image button,.card10:hover .image button,.card11:hover .image button
 {
     opacity: 1;
     
@@ -302,6 +302,18 @@ body
     margin-top: 0px;
 }
 .card10:hover .content4 p
+{
+    opacity: 1;
+    transform: translateY(0);
+    line-height: 1.5;
+}
+.card11:hover .content4 h2 
+{
+    scale: 1;
+    opacity: 1;
+    margin-top: 0px;
+}
+.card11:hover .content4 p
 {
     opacity: 1;
     transform: translateY(0);
@@ -583,7 +595,7 @@ nav .sidebar1 a:hover span {
         display: none;
         pointer-events: none;
     }
-    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11
     {
         width: 500px;
     }
@@ -644,7 +656,7 @@ nav .sidebar1 a:hover span {
     nav .sidebar1 li a {
         font-size: 20px;
     }
-    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11
     {
         width: 500px;
     }
@@ -688,7 +700,7 @@ nav .sidebar1 a:hover span {
     {
         font-size: 20px;
     }
-    .card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after,.card7:hover::after,.card8:hover::after,.card9:hover::after,.card10:hover::after
+    .card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after,.card7:hover::after,.card8:hover::after,.card9:hover::after,.card10:hover::after,.card11:hover::after
     {
         padding: 31%;
         margin-top: -1%;
@@ -723,7 +735,7 @@ nav .sidebar1 a:hover span {
 }
 @media all and (max-width:900px)
 {
-    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11
     {
         width: calc(100% / 2);
     }
@@ -773,12 +785,12 @@ nav .sidebar1 a:hover span {
     {
         font-size: 18px;
     }
-    .card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after
+    .card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after,.card11::after
     {
         display: flex;
         border: 1px solid greenyellow;
     }
-    .card1 .image img, .card2 .image img, .card3 .image img, .card4 .image img, .card5 .image img, .card6 .image img, .card7 .image img, .card8 .image img, .card9 .image img, .card10 .image img
+    .card1 .image img, .card2 .image img, .card3 .image img, .card4 .image img, .card5 .image img, .card6 .image img, .card7 .image img, .card8 .image img, .card9 .image img, .card10 .image img,.card11 .image img
     {
         height: 102.7%;
         border-radius: 5px;
@@ -787,7 +799,7 @@ nav .sidebar1 a:hover span {
     {
         width: 340px;
     }
-    .card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after,.card7:hover::after,.card8:hover::after,.card9:hover::after,.card10:hover::after
+    .card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after,.card7:hover::after,.card8:hover::after,.card9:hover::after,.card10:hover::after,.card11:hover::after
     {
         display: none;
     }
@@ -834,7 +846,7 @@ nav .sidebar1 a:hover span {
     {
         transition: all .10s ease-out;
     }
-    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11
     {
         transition: opacity 0.5s;
     }
@@ -875,7 +887,7 @@ nav .sidebar1 a:hover span {
         color: white;
         text-shadow: 2px 2px black;
     }
-    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11
     {
         width: 350px;
         display: flex;
@@ -933,12 +945,12 @@ nav .sidebar1 a:hover span {
     {
         font-size: 15px;
     }
-    .card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after
+    .card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after,.card11::after
     {
         display: flex;
         border: 1px solid greenyellow;
     }
-    .card1 .image img, .card2 .image img, .card3 .image img, .card4 .image img, .card5 .image img, .card6 .image img, .card7 .image img, .card8 .image img, .card9 .image img, .card10 .image img
+    .card1 .image img, .card2 .image img, .card3 .image img, .card4 .image img, .card5 .image img, .card6 .image img, .card7 .image img, .card8 .image img, .card9 .image img, .card10 .image img,.card11 .image img
     {
         height: 100%;
         border-radius: 5px;
@@ -959,7 +971,7 @@ nav .sidebar1 a:hover span {
         width: 100px;
         height: 50px;
     }
-    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11
     {
         width: 320px;
         display: flex;
@@ -1011,16 +1023,16 @@ nav .sidebar1 a:hover span {
     {
         font-size: 15px;
     }
-    .card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after
+    .card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after,.card7::after,.card8::after,.card9::after,.card10::after,.card11::after
     {
     border: 1px solid greenyellow;
     }
-    .card1 .image img, .card2 .image img, .card3 .image img, .card4 .image img, .card5 .image img, .card6 .image img, .card7 .image img, .card8 .image img, .card9 .image img, .card10 .image img
+    .card1 .image img, .card2 .image img, .card3 .image img, .card4 .image img, .card5 .image img, .card6 .image img, .card7 .image img, .card8 .image img, .card9 .image img, .card10 .image img,.card11 .image img
     {
         height: 100%;
         border-radius: 5px;
     }
-    .card1, .card2, .card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10
+    .card1, .card2, .card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11
     {
         aspect-ratio: 0.7/0.7;
     }
