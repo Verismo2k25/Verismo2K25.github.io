@@ -611,3 +611,34 @@ html, body, .background {
     }
 
 }
+/*--STYLING BY ARUN---*/
+
+@media all and (min-width:1000px) {
+    .div2 {
+        display: none;
+    }
+    .div{
+        display: none;
+    }
+}
+
+
+.contact {
+display: none;
+}
+
+@media all and (min-width: 1000px) {
+.contact {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-weight: 100;
+    align-items: center;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+}
+
+
+/*---STYLE END--*/

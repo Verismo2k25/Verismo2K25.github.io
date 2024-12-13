@@ -14,20 +14,19 @@ html {
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    align-items: center;
 }
 body
 {
-    background-image: url(chatbot.png);
+    background-image: url('webdevbg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.13);
+    background-color: rgba(0, 0, 0, 0.363);
     background-blend-mode: overlay;
 }
 html, body, .background {
-    height: 100%;
+    height: 10%;
 }
 .image
 {
@@ -459,10 +458,12 @@ html, body, .background {
     }
     body
     {
-        background-image: url(solvemobbg.jpg);
+        background-image: url(webdevbg.jpg);
         max-height: 50vh;
         background-size: cover;
         background-position: center center;
+        background-color: rgba(0, 0, 0, 0.13);
+        background-blend-mode: overlay;
     }
     .div
     {
@@ -548,7 +549,7 @@ html, body, .background {
     }
     body
     {
-        background-image: url(solvemobbg.jpg);
+        background-image: url('webdevbg.jpg');
         max-height: 50vh;
         background-size: cover;
         background-position: center center;
@@ -611,3 +612,37 @@ html, body, .background {
     }
 
 }
+
+
+
+/*--STYLING BY ARUN---*/
+
+@media all and (min-width:1000px) {
+        .div2 {
+            display: none;
+        }
+        .div{
+            display: none;
+        }
+}
+
+
+.contact {
+    display: none;
+}
+
+@media all and (min-width: 1000px) {
+    .contact {
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        font-size: 15px;
+        font-weight: 100;
+        align-items: center;
+        padding-left: 3%;
+        padding-top: 2%;
+    }
+}
+
+
+/*---STYLE END--*/

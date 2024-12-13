@@ -22,6 +22,8 @@ body
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.13);
+    background-blend-mode: overlay;
 }
 html, body, .background {
     height: 100%;
@@ -32,6 +34,7 @@ html, body, .background {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 20px;
 }
 .image img
 {
@@ -51,12 +54,12 @@ html, body, .background {
 }
 .image h4
 {
-    color: rgb(3, 255, 133);
+    color: rgb(0, 253, 126);
     font-size: 2rem;
     font-family: "Acme", sans-serif;
     font-weight: 700;
     text-align: center;
-    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    text-shadow: 2px 2px 10px rgb(3, 3, 3);
 }
 .image button
 {
@@ -121,7 +124,7 @@ html, body, .background {
 {
     margin-bottom: 30px;
     padding: 10px;
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -131,9 +134,13 @@ html, body, .background {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
-    position: relative;
-    margin-top: 5%;
-    backdrop-filter: blur(5px);
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 50%;
+    height: 10%;
+    margin-bottom: 0px;
+    margin-top: 23px;
 }
 .contact
 {
@@ -158,6 +165,8 @@ html, body, .background {
     font-family: "Acme", sans-serif;
     font-weight: 700;
     text-shadow: 2px 2px 10px black;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 .image .back {
     color: rgb(255, 255, 255);
@@ -184,12 +193,86 @@ html, body, .background {
 .div img
 {
     width: 30px;
-    margin-left: 15px;
+    margin-left: 0px;
     margin-bottom: 3px;
     filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.43) );
     background-color: transparent;
+    margin-right: 15px;
 }
   
+
+
+
+
+.div2
+{
+    margin-bottom: 30px;
+    padding: 10px;
+    display: block;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 22px;
+    background-color: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 50%;
+    height: 10%;
+    position: relative;
+    margin-left: 50%;
+    margin-bottom: 0px;
+}
+
+.div2 .contact .c
+{
+   
+    margin-right: 50px;
+}
+.div2 h4
+{
+    
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px black;
+    
+}
+.image .back {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem; /* Increase the size of the icon */
+    left: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top:30px;
+    margin-right: 80%;
+    background-color: rgba(0, 0, 0, 0.603);
+    border: none;
+    border-radius: 80px;
+    padding: 2px;
+    
+}
+.image a:active, a:focus, a:visited {
+    background-color: transparent;
+    outline: none; 
+}
+.scrollbox .scrollbox-inner .and 
+{
+    color: rgb(0, 255, 170);
+}
+.div2 img
+{
+    width: 30px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.43) );
+    background-color: transparent;
+    margin-right: 15px;
+}
 .image .back:hover {
     color: #05f772;
     transform: translateY(-10px);
@@ -209,69 +292,10 @@ html, body, .background {
     background: linear-gradient(rgb(1, 248, 149),rgb(0, 240, 236));
     border-radius: 20px;
 }
-.element
-{
-    display: block;
-    position:absolute;
-    left: 300px;
-    top: 15%;
-    height:auto;
-    width: auto;
-}
-.element img
-{
-    filter: drop-shadow(2px 2px 10px rgb(1, 1, 1));
-    width: 70px;
-    -webkit-animation: spin1 15s linear infinite ;
-    -moz-animation:  spin1 15s linear infinite;
-    animation: spin1 15s linear infinite;
-}
-/* keryframes for rotation */
-@-webkit-keyframes spin1
-{
-    100%{-webkit-transform:rotate(360deg)}
-}
-@-moz-keyframes spin1
-{
 
-    100%{-webkit-transform:rotate(360deg)}
-}
-@keyframes spin1
-{
-    100%{-webkit-transform:rotate(360deg)}
-}
 
-.element1
-{
-    display: block;
-    position:absolute;
-    left: 20px;
-    margin-right: 0px;
-    top: 28%;
-    height:auto;
-    width: auto;
-}
-.element1 img
-{
-    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
-    width: 70px;
-    -webkit-animation: spin 10s linear infinite ;
-    -moz-animation:  spin 10s linear infinite;
-    animation: spin 10s linear infinite;
-}
-/* keryframes for rotation */
-@-webkit-keyframes spin
-{
-    100%{-webkit-transform:rotate(-360deg)}
-}
-@-moz-keyframes spin
-{
-    100%{-webkit-transform:rotate(-360deg)}
-}
-@keyframes spin
-{
-    100%{-webkit-transform:rotate(-360deg)}
-}
+
+
 
 
 
@@ -304,6 +328,7 @@ html, body, .background {
         text-align: center;
         text-shadow: 2px 2px 10px black;
     }
+
     .div h4
     {
         text-transform: uppercase;
@@ -367,9 +392,10 @@ html, body, .background {
     {
         word-spacing: normal;
     }
-    .div h4
+    .div2 h4
     {
         text-transform: uppercase;
+        font-size: 25px;
     }
     .contact
     {
@@ -407,13 +433,14 @@ html, body, .background {
         text-align: center;
 
     }
-    .div h4
-    {
-        text-transform: uppercase;
-    }
     .contact
     {
         text-transform: uppercase;
+    }
+    .div2 h4
+    {
+        text-transform: uppercase;
+        font-size: 40px;
     }
 }
 
@@ -450,15 +477,29 @@ html, body, .background {
         margin-left: 250px;
 
     }
+    .div2
+    {
+        background-color: transparent;
+        margin-top: 100px;
+        box-shadow: none;
+        border:none;
+        backdrop-filter: none;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+
+    }
     .contact
     {
         font-size: 30px;
         text-transform: uppercase;
     }
-    .div h4
+    .div2 h4
     {
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 40px;
     }
     .image
     {
@@ -511,6 +552,8 @@ html, body, .background {
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.521);
+        background-blend-mode: overlay;
     }
     .div
     {
@@ -520,6 +563,23 @@ html, body, .background {
         justify-content: center;
         align-items: center;
         margin-left: 400px;
+    }
+    .div2
+    {
+        margin-top: 100px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 800px;
+        margin-top: 120px;
+
+    }
+
+    .div2 h4
+    {
+        text-transform: uppercase;
+        font-size: 40px;
     }
     .image
     {
@@ -548,8 +608,37 @@ html, body, .background {
     {
         font-size: 30px;
     }
-    .div h4
-    {
-        font-size: 30px;
+
+}
+
+/*--STYLING BY ARUN---*/
+
+@media all and (min-width:1000px) {
+        .div2 {
+            display: none;
+        }
+        .div{
+            display: none;
+        }
+}
+
+
+.contact {
+    display: none;
+}
+
+@media all and (min-width: 1000px) {
+    .contact {
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        font-size: 15px;
+        font-weight: 100;
+        align-items: center;
+        padding-left: 3%;
+        padding-top: 2%;
     }
 }
+
+
+/*---STYLE END--*/
