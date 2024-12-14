@@ -33,6 +33,10 @@ html,body {
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
     overflow: hidden;
+    background-image: url(home2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {
@@ -691,7 +695,7 @@ img {
     }
     .hero
     {
-        background-image: url(homehro.jpg);
+        background-image: url(home2.jpeg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -873,12 +877,12 @@ img {
     }
     .hero
     {
-        background-image: url(homehro.jpg);
+        background-image: url(home\ 3.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        background-color: rgba(0, 0, 0, 0.13);
+        background-color: rgba(0, 0, 0, 0.26);
         background-blend-mode: overlay;
     }
     body
