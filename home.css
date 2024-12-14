@@ -42,6 +42,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(home\ back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 nav {
@@ -687,13 +691,14 @@ img {
     }
     .hero
     {
-        background-image: url(theyyam.jpg);
+        background-image: url(homehro.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         object-fit: contain;
         background-attachment: fixed;
-    }
+        background-color: rgba(0, 0, 0, 0.26);
+        background-blend-mode: overlay;    }
 
 }
 
@@ -868,13 +873,18 @@ img {
     }
     .hero
     {
-        background-image: url(theyyam.jpg);
+        background-image: url(homehro.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
         background-color: rgba(0, 0, 0, 0.13);
         background-blend-mode: overlay;
+    }
+    body
+    {
+        background-image: none;
+        background-color: black;
     }
 }
 
