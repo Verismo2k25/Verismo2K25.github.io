@@ -17,7 +17,7 @@ html {
 }
 body
 {
-    background-image: url('webdevbg.jpg');
+    background-image: url('chatbot.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -458,7 +458,7 @@ html, body, .background {
     }
     body
     {
-        background-image: url(webdevbg.jpg);
+        background-image: url(chatbot.png);
         max-height: 50vh;
         background-size: cover;
         background-position: center center;
@@ -549,7 +549,7 @@ html, body, .background {
     }
     body
     {
-        background-image: url('webdevbg.jpg');
+        background-image: url('chatbot\ bg.png');
         max-height: 50vh;
         background-size: cover;
         background-position: center center;
