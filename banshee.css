@@ -134,9 +134,10 @@ body {
 
   #A {
      display: none;
+     margin-bottom: -40px;
   }
   .foot{
-    display: none;
+    display: flex;
   }
 
 }
@@ -144,7 +145,8 @@ body {
 @media (max-width: 576px) {
 
   .foot{
-    display: none;
+    display: flex;
+    margin-bottom: -40px;
   }
   .ins{
     display: none;
