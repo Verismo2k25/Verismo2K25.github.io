@@ -22,7 +22,7 @@ body
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.13);
+    background-color: rgba(0, 0, 0, 0.322);
     background-blend-mode: overlay;
 }
 html, body, .background {
@@ -45,7 +45,7 @@ html, body, .background {
 }
 .image h5
 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-family: "Acme", sans-serif;
     font-weight: 700;
@@ -54,7 +54,7 @@ html, body, .background {
 }
 .image h4
 {
-    color: rgb(0, 253, 126);
+    color: rgb(0, 255, 136);
     font-size: 2rem;
     font-family: "Acme", sans-serif;
     font-weight: 700;
